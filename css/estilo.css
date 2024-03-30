@@ -88,3 +88,7 @@ h1, h2{
 .menu ul li a{
   font-weight: bold;
 }
+
+#conteudo{
+  line-height: 1.5;
+}
