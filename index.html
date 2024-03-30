@@ -7,7 +7,7 @@ A <!DOCTYPE html> document type definition, declaração define que este documen
 
 <!-- O HTML é a tag raiz da estrutura html, todo o conteúdo deve ser criado dentro dele.
 -->
-<html>
+<html lang="pt-br">
   <!-- 
 		<head> Elemento contém meta informações sobre a página HTML
 	-->
@@ -15,9 +15,12 @@ A <!DOCTYPE html> document type definition, declaração define que este documen
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EXEMPLO</title>
+
+    <link rel="stylesheet" href="./css/estilo.css" />
   </head>
+
   <body>
-    <div class="container">
+    <div id="container">
       <header class="cabecalho">
         <h1>Minha Página</h1>
         <nav class="menu">
@@ -34,7 +37,7 @@ A <!DOCTYPE html> document type definition, declaração define que este documen
 
       <section class="conteudo">
         <div>
-          <h2>HELP</h2>
+          <h2 class="tit-sec">HELP</h2>
           <p>
             Help - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
             error cumque quas dolorem quaerat vero! Quaerat magnam pariatur, aut
@@ -54,7 +57,7 @@ A <!DOCTYPE html> document type definition, declaração define que este documen
         </div>
 
         <div>
-          <h2>ABOUT</h2>
+          <h2 class="tit-sec">ABOUT</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             eaque expedita adipisci placeat omnis numquam illum sunt dolore quo
@@ -64,7 +67,7 @@ A <!DOCTYPE html> document type definition, declaração define que este documen
         </div>
 
         <div id="contact">
-          <h2>CONTACT</h2>
+          <h2 class="tit-sec">CONTACT</h2>
           <form>
             <fieldset>
               <legend>Customer Data</legend>
@@ -94,19 +97,15 @@ A <!DOCTYPE html> document type definition, declaração define que este documen
         </div>
       </section>
 
-      <footer class="rodape">
-        <nav>
+      <footer class="cabecalho">
+        <nav class="tit-sec">
           <ul>
             <li>
               <a href="https://www2.fiap.com.br/" target="_blank"> FIAP </a>
             </li>
             <li>
               <a href="https://www.google.com.br/" target="_blank">
-                <img
-                  src="./img/search.png"
-                  alt="Logo do Google"
-                  style="width: 2%"
-                />
+                <img src="./img/social.png" alt="Logo do Google" width="2%" />
               </a>
             </li>
             <li><a href="https://github.com/" target="_blank">Github</a></li>
@@ -115,5 +114,7 @@ A <!DOCTYPE html> document type definition, declaração define que este documen
         <p>Todos os direitos reservados <small>2024 - &copy;</small></p>
       </footer>
     </div>
+
+    <div>Esta div está fora dos domínios do container...</div>
   </body>
 </html>
