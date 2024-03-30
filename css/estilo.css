@@ -92,3 +92,8 @@ h1, h2{
 #conteudo{
   line-height: 1.5;
 }
+
+#contact form {
+  border: 1px solid #949494;
+  padding: 10px;
+}
