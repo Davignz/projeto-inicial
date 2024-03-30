@@ -64,6 +64,10 @@ h1, h2{
   background-color: #ccc;
 }
 
+.container{
+  padding: 20px;
+}
+
 .cabecalho{
   background-color: #71b3ff;
   color: #fff;
