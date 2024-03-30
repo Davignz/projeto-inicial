@@ -101,3 +101,8 @@ h1, h2{
 p {
   color: #006b00;
 }
+
+#contact form button{
+  background-color: #287eff;
+  color: #fff;
+}
